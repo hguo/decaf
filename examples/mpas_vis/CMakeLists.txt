@@ -50,7 +50,7 @@ set_target_properties       (mod_mpas_adapter2          PROPERTIES SUFFIX ".so")
 # Don't add a 'lib' prefix to the shared library
 set_target_properties       (mod_mpas_adapter2       PROPERTIES PREFIX "")
 
-target_link_libraries (flow_main ${NETCDF_LIBRARIES} ${VTK_LIBRARIES} ${libnabo_LIBRARIES} ${libraries} ${bredala_transports} ${PNETCDF_LIBRARY} bredala_datamodel manala decaf)
+target_link_libraries (flow_main ${VTK_LIBRARIES} ${libnabo_LIBRARIES} ${libraries} ${bredala_transports} ${NETCDF_LIBRARIES} ${PNETCDF_LIBRARY} bredala_datamodel manala decaf)
 
 install                     (TARGETS flow_main mod_mpas_adapter2 
                             DESTINATION ${CMAKE_INSTALL_PREFIX}/examples/mpas_vis/
