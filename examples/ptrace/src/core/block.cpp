@@ -7,6 +7,7 @@
 #include "nabo/nabo.h"
 #include <map>
 #include <utility>
+#include <random>
 #include <pnetcdf.h>
 
 using namespace Eigen;
